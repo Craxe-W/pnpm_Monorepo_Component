@@ -1,0 +1,60 @@
+@import (reference) "../style/variables.less";
+
+.@{prefix}-locale-select {
+  display: inline-block;
+  position: relative;
+  border: 1px solid @c-btn-border;
+  border-radius: 14px;
+  transition: background 0.2s;
+
+  [data-prefers-color="dark"] & {
+    border: 1px solid @c-btn-border-dark;
+  }
+
+  &:hover {
+    background-color: #fafafa;
+
+    [data-prefers-color="dark"] & {
+      background-color: rgba(255, 255, 255, 10%);
+    }
+  }
+
+  &:not([data-locale-count="1"]):not([data-locale-count="2"])::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -3px;
+    border: 4px solid transparent;
+    border-top: 6px solid #7b7f8d;
+    width: 0;
+    height: 0;
+    content: "";
+    pointer-events: none;
+  }
+
+  a,
+  span,
+  select {
+    border: 0;
+    padding: 0 24px 0 16px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: #7b7f8d;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+  }
+
+  a,
+  span {
+    padding-right: 16px;
+  }
+
+  @media @mobile {
+    margin-top: 6px;
+  }
+}

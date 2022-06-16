@@ -1,0 +1,30 @@
+@import (reference) "../style/variables.less";
+
+.@{prefix}-alert {
+  margin: 24px 0;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: #fff;
+
+  &:not([type]),
+  &[type="info"] {
+    border-color: #69b9ff;
+    background: #e0f1ff;
+  }
+
+  &[type="warning"] {
+    border-color: #ffcb49;
+    background: #fff5db;
+  }
+
+  &[type="success"] {
+    border-color: #a4d957;
+    background: #eeffd8;
+  }
+
+  &[type="error"] {
+    border-color: #f77;
+    background: #ffeded;
+  }
+}

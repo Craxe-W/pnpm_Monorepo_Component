@@ -1,0 +1,103 @@
+/* stylelint-disable selector-class-pattern */
+@import (reference) "../style/variables.less";
+
+@media @v-device-show {
+  .@{prefix}-mobile-previewer {
+    .@{prefix}-previewer-demo {
+      display: none;
+    }
+
+    .@{prefix}-previewer-desc,
+    .@{prefix}-previewer-desc:not([data-title]) + .@{prefix}-previewer-actions {
+      border-top: none;
+    }
+
+    button[role="source"] {
+      overflow: hidden;
+      margin-right: -8px;
+      width: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.adm-doc-previewer {
+  --border-color: @c-border;
+
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  width: 100%;
+  height: 700px;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &[data-debug] {
+    --border-color: #ffcb00;
+  }
+
+  > .adm-doc-previewer-source {
+    flex: 1;
+    overflow-x: scroll;
+
+    .__dumi-default-previewer {
+      display: flex;
+      border-right: none;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .__dumi-default-previewer-actions {
+        border-top: none;
+      }
+
+      .__dumi-default-previewer-demo {
+        display: none;
+      }
+
+      .__dumi-default-previewer-desc {
+        display: none;
+      }
+
+      > * {
+        flex: none;
+      }
+
+      > .__dumi-default-previewer-source-wrapper {
+        display: flex;
+        min-height: 0;
+        flex: auto;
+        flex-direction: column;
+
+        > .__dumi-default-tabs {
+          flex: none;
+        }
+
+        > .__dumi-default-previewer-source {
+          flex: auto;
+          overflow-y: scroll;
+          border-bottom-left-radius: 12px;
+          .@{prefix}-code-block {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  > .adm-doc-previewer-device {
+    flex: 0;
+    border-left: solid 1px var(--border-color);
+  }
+
+  @media only screen and (max-width: 1440px) {
+    height: 600px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    height: 500px;
+  }
+}
