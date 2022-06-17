@@ -1,10 +1,9 @@
 {
   "name": "pnpm_monorepo_component",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "pnpm start --F market-packages-dumi"
+  "private": true,
+    "scripts": {
+    "start": "pnpm --F dosc-site-dumi start",
+    "build": "pnpm build --F dosc-site-dumi"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +12,9 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "postcss": "^8.4.14",
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
-    "@types/react": "^17.0.39",
+    "@types/react": "^18.0.14",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "eslint": "^8.10.0",
@@ -26,11 +24,12 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
+    "postcss": "^8.4.14",
     "postcss-less": "^6.0.0",
     "prettier": "^2.5.1",
     "stylelint": "^14.5.3",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.7.3"
   }
 }
