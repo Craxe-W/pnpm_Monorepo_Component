@@ -1,12 +1,16 @@
 {
   "name": "component-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "营销移动端业务组件",
+  "main": "./cjs/index.js",
+  "module": "./src/index.ts",
+  "types": "./es/index.d.ts",
+  "typings": "./es/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
+
 }

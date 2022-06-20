@@ -1,9 +1,9 @@
 {
   "name": "pnpm_monorepo_component",
   "private": true,
-    "scripts": {
+  "scripts": {
     "start": "pnpm --F dosc-site-dumi start",
-    "build": "pnpm build --F dosc-site-dumi"
+    "build": "pnpm --F dosc-site-dumi build"
   },
   "keywords": [],
   "author": "",

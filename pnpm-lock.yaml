@@ -54,6 +54,7 @@ importers:
     specifiers:
       antd-mobile: ^5.1.0
       antd-mobile-icons: ^0.2.2
+      component-example: workspace:*
       dumi: ^1.0.13
       prism-react-renderer: ^1.3.1
       prismjs: ^1.28.0
@@ -63,6 +64,7 @@ importers:
     dependencies:
       antd-mobile: 5.15.1_react-dom@17.0.2
       antd-mobile-icons: 0.2.2
+      component-example: link:../component-example
       react-dom: 17.0.2
     devDependencies:
       dumi: 1.1.42_react-dom@17.0.2

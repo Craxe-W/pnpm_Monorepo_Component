@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="16px" viewBox="0 0 40 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮@2x</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFE834" offset="0%"></stop>
+            <stop stop-color="#FFB000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF8335" offset="0%"></stop>
+            <stop stop-color="#E03E00" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8,1 L32,1 C35.8659932,1 39,4.13400675 39,8 C39,11.8659932 35.8659932,15 32,15 L8,15 C4.13400675,15 1,11.8659932 1,8 C1,4.13400675 4.13400675,1 8,1 Z" id="path-3"></path>
+        <filter x="-6.6%" y="-17.9%" width="113.2%" height="135.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.879029647   0 0 0 0 0.185725514  0 0 0 0.8 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-40.0%" y="-180.0%" width="179.9%" height="460.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1.2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-40.0%" y="-180.3%" width="180.0%" height="460.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="1.2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="活动页悬浮倒计时" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文案变化" transform="translate(-276.000000, -126.000000)">
+            <g id="悬浮备份-6" transform="translate(276.000000, 126.000000)">
+                <g id="矩形" stroke-linejoin="round" fill-rule="nonzero">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <path stroke="url(#linearGradient-2)" stroke-width="1" d="M32,0.5 C34.0710678,0.5 35.9460678,1.33946609 37.3033009,2.69669914 C38.6605339,4.05393219 39.5,5.92893219 39.5,8 C39.5,10.0710678 38.6605339,11.9460678 37.3033009,13.3033009 C35.9460678,14.6605339 34.0710678,15.5 32,15.5 L32,15.5 L8,15.5 C5.92893219,15.5 4.05393219,14.6605339 2.69669914,13.3033009 C1.33946609,11.9460678 0.5,10.0710678 0.5,8 C0.5,5.92893219 1.33946609,4.05393219 2.69669914,2.69669914 C4.05393219,1.33946609 5.92893219,0.5 8,0.5 L8,0.5 Z"></path>
+                </g>
+                <path d="M4.26298181,5.39539942 C7.74457551,5.39848188 8.76542814,4.95168267 8.76493649,4.39940677 C8.76444449,3.84713087 7.74279446,3.39851392 4.26120077,3.39539942 C0.779607074,3.39231697 -0.241245557,3.83911618 -0.240753914,4.39139208 C-0.240261915,4.94366798 0.781388118,5.39228493 4.26298181,5.39539942 Z" id="Oval" fill="#FFE8A2" opacity="0.278406334" style="mix-blend-mode: normal;" filter="url(#filter-5)" transform="translate(4.262091, 4.395399) rotate(-35.000000) translate(-4.262091, -4.395399) "></path>
+                <path d="M10.5,2.99621406 C13.9793939,2.99621406 15,2.54934632 15,1.99810703 C15,1.44686774 13.9793939,1 10.5,1 C7.02060608,1 6,1.44686774 6,1.99810703 C6,2.54934632 7.02060608,2.99621406 10.5,2.99621406 Z" id="Oval备份" fill="#FFE8A2" opacity="0.278406334" style="mix-blend-mode: normal;" filter="url(#filter-6)" transform="translate(10.500000, 1.998107) rotate(-360.000000) translate(-10.500000, -1.998107) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

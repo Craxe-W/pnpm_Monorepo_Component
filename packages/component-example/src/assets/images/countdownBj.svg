@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="50px" viewBox="0 0 44 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>背景@2x</title>
+    <defs>
+        <linearGradient x1="50%" y1="74.3302807%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FD4127" offset="0%"></stop>
+            <stop stop-color="#FF9214" offset="100%"></stop>
+        </linearGradient>
+        <path d="M9,0 L35,0 C39.9705627,-9.13077564e-16 44,4.02943725 44,9 L44,41 C44,45.9705627 39.9705627,50 35,50 L9,50 C4.02943725,50 2.38507522e-15,45.9705627 0,41 L0,9 C-6.08718376e-16,4.02943725 4.02943725,9.13077564e-16 9,0 Z" id="path-2"></path>
+        <filter x="-6.8%" y="-6.0%" width="113.6%" height="112.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.355957031   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="-3" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.957862301   0 0 0 0 0   0 0 0 0 0  0 0 0 0.9 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner3"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner3" result="shadowOffsetInner3"></feOffset>
+            <feComposite in="shadowOffsetInner3" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner3"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.91137866   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner3" result="shadowMatrixInner3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner3"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.0%" y="-119.8%" width="160.0%" height="339.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-14.4%" y="-120.0%" width="128.8%" height="340.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1.2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="活动页悬浮倒计时" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文案变化" transform="translate(-208.000000, -94.000000)">
+            <g id="编组-5" transform="translate(208.000000, 94.000000)">
+                <g id="矩形">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+                <path d="M5.78033198,6.17253473 C10.4166493,6.19688418 11.7737134,5.53148256 11.7701422,4.70185748 C11.7665568,3.87223239 10.4036911,3.19254598 5.76737379,3.16819652 C1.13105646,3.14384706 -0.226007661,3.80924868 -0.22243641,4.63887377 C-0.218851052,5.46849886 1.14401465,6.14818527 5.78033198,6.17253473 Z" id="Oval" fill="#FFE8A2" opacity="0.278406334" style="mix-blend-mode: normal;" filter="url(#filter-4)" transform="translate(5.773853, 4.670366) rotate(-35.000000) translate(-5.773853, -4.670366) "></path>
+                <path d="M26.735956,4 C38.902976,4 35.5874313,3.32842712 35.5874313,2.5 C35.5874313,1.67157288 38.902976,1 26.735956,1 C14.5689361,1 11,1.67157288 11,2.5 C11,3.32842712 14.5689361,4 26.735956,4 Z" id="Oval备份-2" fill="#FFE8A2" opacity="0.278406334" style="mix-blend-mode: normal;" filter="url(#filter-5)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
