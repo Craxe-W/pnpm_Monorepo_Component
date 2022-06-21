@@ -1,6 +1,26 @@
 # 基于 pnpm 配置 Monorepo 搭建一个 Component
 
-## 基本配置
+## 启动项目流程
+
+### 安装 pnpm
+
+```bash
+npm install -g pnpm
+```
+
+### 安装依赖
+
+```bash
+pnpm install
+```
+
+### 启动项目
+
+```bash
+pnpm start
+```
+
+## 基本配置过程
 
 ### 1.安装 pnpm
 
