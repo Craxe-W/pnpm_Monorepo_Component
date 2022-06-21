@@ -1,6 +1,11 @@
 {
   "name": "pnpm_monorepo_component",
   "private": true,
+  "engines": {
+    "node": ">=10",
+    "pnpm": ">=7.0.0"
+  },
+  "packageManager": "pnpm@7.2.1",
   "scripts": {
     "start": "pnpm --F dosc-site-dumi start",
     "build": "pnpm --F dosc-site-dumi build"
@@ -31,5 +36,9 @@
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0",
     "typescript": "^4.7.3"
+  },
+  "lint-staged": {
+    "packages/**/src/*.{js,jsx,ts,tsx}": "eslint --fix",
+    "packages/**/*.{css,less}": "stylelint --fix"
   }
 }
