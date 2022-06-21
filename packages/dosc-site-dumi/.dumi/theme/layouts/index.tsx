@@ -1,20 +1,20 @@
-import React, { useContext } from 'react'
-import type { IRouteComponentProps } from '@umijs/types'
-import { context } from 'dumi/theme'
-import Navbar from '../components/Navbar'
-import SideMenu from '../components/SideMenu'
-import '../style/layout-default.less'
-import '../style/global.less'
-import styles from './index.less'
+import React, { useContext } from 'react';
+import type { IRouteComponentProps } from '@umijs/types';
+import { context } from 'dumi/theme';
+import Navbar from '../components/Navbar';
+import SideMenu from '../components/SideMenu';
+import '../style/layout-default.less';
+import '../style/global.less';
+import styles from './index.less';
 
 const Layout: React.FC<IRouteComponentProps> = ({ children, location }) => {
-  const { meta } = useContext(context)
-  const showSideMenu = meta.sidemenu !== false && !meta.gapless
-  const showSlugs = Boolean(meta.slugs?.length) && (meta.toc === 'content' || meta.toc === undefined) && !meta.gapless
-  const updatedTimeIns = new Date(meta.updatedTime)
+  const { meta } = useContext(context);
+  const showSideMenu = meta.sidemenu !== false && !meta.gapless;
+  const showSlugs = Boolean(meta.slugs?.length) && (meta.toc === 'content' || meta.toc === undefined) && !meta.gapless;
+  const updatedTimeIns = new Date(meta.updatedTime);
   const updatedTime: any = `${updatedTimeIns.toLocaleDateString([], {
-    hour12: false
-  })} ${updatedTimeIns.toLocaleTimeString([], { hour12: false })}`
+    hour12: false,
+  })} ${updatedTimeIns.toLocaleTimeString([], { hour12: false })}`;
 
   return (
     <div
@@ -45,7 +45,7 @@ const Layout: React.FC<IRouteComponentProps> = ({ children, location }) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

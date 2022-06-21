@@ -3,7 +3,7 @@
 ## 安装
 
 ```bash
-$ npm install --save @yh/yh-market-packages
+$ npm install --save component-example
 # or
 $ yarn add @yh/yh-market-packages
 ```

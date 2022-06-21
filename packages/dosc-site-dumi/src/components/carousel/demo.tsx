@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-// import { DemoBlock } from 'demos'
-import { Carousel } from 'component-example'
-import './index.less'
-const colors = ['#ace0ff', '#bcffbd', '#e4fabd', '#ffcfac', '#00FA9A', '#FFFF00', '#FF4500']
+import { DemoBlock } from 'demos';
+import { Carousel } from 'component-example';
+import './index.less';
+const colors = ['#ace0ff', '#bcffbd', '#e4fabd', '#ffcfac', '#00FA9A', '#FFFF00', '#FF4500'];
 
 const items = colors.map((color, index) => (
   <Carousel.Item key={index}>
@@ -11,12 +11,12 @@ const items = colors.map((color, index) => (
       {index + 1}
     </div>
   </Carousel.Item>
-))
+));
 
 export default () => {
   return (
     <React.Fragment>
-      {/* <DemoBlock title='自动轮播'>
+      <DemoBlock title='自动轮播'>
         <Carousel page={1} autoplay={true} loop={true} direction='horizontal' autoplayInterval={3000} duration={500}>
           {items}
         </Carousel>
@@ -34,11 +34,12 @@ export default () => {
           {items}
         </Carousel>
       </DemoBlock>
-      <DemoBlock title='轮播气泡'> */}
+
+      <DemoBlock title='轮播气泡'>
         <Carousel page={4} autoplay={true} loop={true} direction='horizontal' autoplayInterval={3000} duration={500}>
           {items}
         </Carousel>
-      {/* </DemoBlock>
+      </DemoBlock>
       <DemoBlock title='轮播气泡'>
         <Carousel page={3} autoplay={true} loop={true} direction='horizontal' autoplayInterval={3000} duration={500}>
           {items}
@@ -48,7 +49,7 @@ export default () => {
         <Carousel page={4} autoplay={true} loop={true} direction='vertical' autoplayInterval={3000} duration={500}>
           {items}
         </Carousel>
-      </DemoBlock> */}
+      </DemoBlock>
     </React.Fragment>
-  )
-}
+  );
+};

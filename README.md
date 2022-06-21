@@ -92,8 +92,45 @@ qrcode.react           二维码
 rimraf                 清空dist组件
 ```
 
-### 10.开始配置组件package内容
+### 10.开始配置组件 package 内容
 
+这部分 因为是组件且只是一个库 这里只需要一个
+
+```
+├─ packages
+│  ├─ component-example // 组件仓库
+│  │  │─ LICENSE
+│  │  ├─ README.md
+│  │  ├─ package.json
+│  │  ├─ src
+│  │  │  ├─ assets
+│  │  │  │  └─ images
+│  │  │  ├─ components // 各组件代码
+│  │  │  │  └─ indicator
+│  │  │  │     ├─ index.ts
+│  │  │  │     ├─ indicator.less
+│  │  │  │     └─ indicator.tsx
+│  │  │  ├─ global
+│  │  │  │  ├─ font.less
+│  │  │  │  ├─ global.less
+│  │  │  │  ├─ index.ts
+│  │  │  │  └─ theme.less
+│  │  │  ├─ index.ts
+│  │  │  └─ utils
+│  │  └─ tsconfig.json
+│  └─ dosc-site-dumi // 站点仓库
+```
+
+这里面 components 是我们编写组件库 的地方，index.ts 则是我们最后抛出组件的地方
+
+```bash
+import './global';
+
+export { default as Carousel } from './src/components/carousel';
+
+```
+
+### 11.剩下开始添加 dumi 模版、添加各种插件满足功能等
 
 ### 遇到的问题
 
@@ -133,4 +170,20 @@ pnpm_Monorepo_Component
 发布页面的相关报价：
 
 使用 pnpm run <script> 时，脚本名称后的所有命令行参数现在都传递给脚本的 argv，甚至 --。例如， pnpm run echo --hello --world 现在将 --hello --world 传递给 echo 脚本的 argv。以前标记的参数（例如 --silent）被解释为 pnpm 参数，除非 -- 出现在它之前。
+```
+
+#### 2.我创建好了 dumi 但是在引入我的 component——example 的时候 一直报我 component——example 文件内 TS 报错
+
+我犯的错误：
+
+- 咱们的组件库也就是 component-example 是不存在 webpack 文件的 而解析我们 TS 文件包括 JS、less 文件全都依赖于我们 dumi 站点中的配置 所以 我应该第一时间在 dumi 上找下问题解决方案
+
+* 解答：
+
+- dumi 提供的.umirc.ts 文件中是支持我们去处理 webpack 的，所以 我们去查看文档可以知道有这么一个配置内容 chainWebpack 所以 我们可以通过这里对我们的内容进行处理
+
+```
+chainWebpack(memo, { env, webpack }) {
+    memo.module.rule('js').include.add(path.resolve(process.cwd(), '../component-example/src'));
+  },
 ```

@@ -16,7 +16,7 @@ type Props = {
   children?: any;
 } & NativeProps;
 
-export const CarouselItem: FC<Props> = (props) => {
+export const CarouselItem: FC<Props> = (props:Props) => {
   const { width = '100%', scale = false, transition = false, children } = props;
 
   // TODO:这里要通过currect+page来控制前几个元素的变换效果 其他的都是正常不变的内容 然后 他这个变换是跟元素移动时候的变换是同步的

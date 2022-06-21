@@ -1,17 +1,18 @@
-import React, { FC } from 'react'
+import React, { FC } from 'react';
 
-import './index.less'
+import './index.less';
 
 interface Props {
-  title: string
-  padding?: string
-  border?: string
-  background?: string
+  title: string;
+  padding?: string;
+  border?: string;
+  background?: string;
+  children?: any;
 }
 
-const classPrefix = 'market-demo-block'
+const classPrefix = 'market-demo-block';
 
-export const DemoBlock: FC<Props> = props => {
+export const DemoBlock: FC<Props> = (props) => {
   return (
     <div className={classPrefix}>
       <div className={`${classPrefix}-title`}>{props.title}</div>
@@ -20,16 +21,16 @@ export const DemoBlock: FC<Props> = props => {
         style={{
           padding: props.padding,
           background: props.background,
-          border: props.border
+          border: props.border,
         }}
       >
         {props.children}
       </div>
     </div>
-  )
-}
+  );
+};
 
 DemoBlock.defaultProps = {
   padding: '12px 12px',
-  background: '#ffffff'
-}
+  background: '#ffffff',
+};
