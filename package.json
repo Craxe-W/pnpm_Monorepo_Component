@@ -8,7 +8,10 @@
   "packageManager": "pnpm@7.2.1",
   "scripts": {
     "start": "pnpm --F dosc-site-dumi start",
-    "build": "pnpm --F dosc-site-dumi build"
+    "build": "pnpm --F dosc-site-dumi build",
+    "prepare": "husky install",
+    "lint:js": "eslint --fix --ext .js,.jsx,.ts,.tsx packages/**/src",
+    "lint:css": "stylelint 'packages/**/*.{css,less}' --fix"
   },
   "keywords": [],
   "author": "",
