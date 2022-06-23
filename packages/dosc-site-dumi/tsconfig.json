@@ -12,19 +12,11 @@
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"],
-      "demos": ["./src/demos/index.ts"]
+      "demos": ["./src/demos/index.ts"],
+      "component-example/es/*": ["../component-example/src/*"],
+      "component-example": ["../component-example/index.ts"]
     },
     "allowSyntheticDefaultImports": true
   },
-  "exclude": [
-    "node_modules",
-    "lib",
-    "es",
-    "dist",
-    "typings",
-    "**/__test__",
-    "test",
-    "docs",
-    "tests"
-  ]
+  "exclude": ["node_modules", "lib", "es", "dist", "typings", "**/__test__", "test", "docs", "tests"]
 }

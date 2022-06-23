@@ -6,7 +6,7 @@ declare module '*.jpeg';
 declare module '*.gif';
 declare module '*.bmp';
 declare module '*.tiff';
-declare module 'lodash/assign';
+declare module 'lodash/*';
 declare module '*.less' {
   const classes: { readonly [key: string]: string };
   export default classes;

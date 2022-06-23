@@ -1,0 +1,47 @@
+@class-prefix-indicator: ~"market-indicator";
+
+.@{class-prefix-indicator} {
+  display: inline-block;
+  position: relative;
+
+  &-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: svg-animation 2s linear infinite;
+  }
+
+  &-circle {
+    stroke-linecap: round;
+    animation: circle-animation 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes svg-animation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-animation {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: -60;
+  }
+
+  100% {
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: -180;
+  }
+}
