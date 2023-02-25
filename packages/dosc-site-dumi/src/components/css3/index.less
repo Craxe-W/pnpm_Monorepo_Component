@@ -1,0 +1,51 @@
+.coupon-box {
+  border-radius: 20px;
+  width: 270px;
+  height: 90px;
+
+  /* overflow: hidden; */
+  background:
+    /* 翻译一下  circle at right top 说是要画一个圆 圆的位置在右上 */
+    /* red 18px, var(--c1) 0  表示 圆的扩散的两个颜色  半径是18的一个圆 从rend扩散到--c1*/
+    /* top left /180px 51% no-repeat; 表示 从上到  */ radial-gradient(
+        circle at right top,
+        transparent 9px,
+        #ffe2e2 0
+      )
+      top left / 90px 51% no-repeat,
+    radial-gradient(circle at right bottom, transparent 9px, #ffe2e2 0) bottom left / 90px 51% no-repeat,
+    radial-gradient(circle at left top, transparent 9px, #bbded6 0) top right / 180px 51% no-repeat,
+    radial-gradient(circle at left bottom, transparent 9px, #bbded6 0) bottom right / 180px 51% no-repeat;
+}
+
+.coupon {
+  display: flex;
+  width: 350px;
+  height: 120px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-box2 {
+  border-radius: 10px;
+  width: 300px;
+  height: 90px;
+  background-image: linear-gradient(45deg, orange, red);
+  //   background-image: url("http://image.yonghuivip.com/image/16773134888454aabd58a49289f653b4d96c3063d22147a13f576.png?w=1053&h=210");
+
+  /* overflow: hidden; */
+  -webkit-mask: /* radial-gradient(circle at 50%, red 5px, #0000 0) 50% 50% / 100% 20px, */
+            /* -20px 20px / 50% 20px; 表示 距离左边-20px 上边-20px 每个间隔50%  上下间隔20px */ radial-gradient(
+      circle at 20px 20px,
+      #0000 20px,
+      red 0
+    ) -20px -20px;
+
+  /* -webkit-mask-composite 表示在当前遮罩及其下方的遮罩层的合成操作 */
+
+  /* 通俗来讲就是多个mask通过-webkit-mask-composite进行效果叠加 */
+
+  /* destination-out 只显示下方遮罩，重合地方不显示 */
+  -webkit-mask-composite: destination-out;
+}
