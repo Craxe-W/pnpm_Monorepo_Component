@@ -352,9 +352,9 @@ export const Carousel: FC<SwiperProps> = (props) => {
     let count = 0;
     const validChildren = React.Children.map(props.children, (child) => {
       if (!React.isValidElement(child)) return null;
-      if (child.type !== CarouselItem) {
-        return null;
-      }
+      // if (child.type !== CarouselItem) {
+      //   return null;
+      // }
       count++;
       return child;
     });
