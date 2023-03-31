@@ -22,5 +22,22 @@
     "./src/index.ts",
     "./es/global/index.js",
     "./src/global/index.ts"
-  ]
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "through2": "^4.0.2"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.31",
+    "antd-mobile": "^5.28.2",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "react": "^18.2.0"
+  }
 }

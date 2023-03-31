@@ -1,0 +1,105 @@
+@class-activity-rule-name: ~'mk-activity-rule';
+@yh-acticity-rule: ~'activityRuleStyle';
+
+.@{class-activity-rule-name} {
+  overflow-y: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #fff;
+
+  &-title {
+    height: 52px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    line-height: 52px;
+    // opacity: 0.7;
+  }
+
+  &-content {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 404px;
+    text-align: left;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &-close {
+    margin-top: 13px;
+    margin-bottom: 24px;
+    border-radius: 22px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff4055 0%, #ff1a34);
+  }
+}
+
+.@{yh-acticity-rule}-Aline {
+  float: right;
+  margin-top: 9px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 3px 0 3px 6px;
+  width: 60px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(151, 2, 0, 60%);
+}
+
+.@{yh-acticity-rule}-twoLine {
+  float: right;
+  margin-top: 9px;
+  padding: 6px;
+  width: 40px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(151, 2, 0, 60%);
+}
+
+.@{yh-acticity-rule}-Alist {
+  float: right;
+  margin-top: 9px;
+  padding: 6px;
+  width: 40px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(151, 2, 0, 60%);
+}
+
+.@{yh-acticity-rule}-oneList {
+  float: right;
+  margin-top: 9px;
+  padding: 3px 0;
+  width: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(151, 2, 0, 60%);
+}
