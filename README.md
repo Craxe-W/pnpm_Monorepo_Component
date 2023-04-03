@@ -14,6 +14,29 @@ npm install -g pnpm
 pnpm install
 ```
 
+## 根目录安装依赖
+
+```bash
+pnpm add <pkg> -S -w
+```
+
+## 根目录卸载依赖
+
+```bash
+pnpm rm <pkg> -w
+```
+## 子项目安装依赖
+
+```bash
+pnpm add <pkg> -S --F <package_name>
+```
+
+## 子项目卸载依赖
+
+```bash
+pnpm rm <pkg> --F <package_name>
+```
+
 ### 启动项目
 
 ```bash
