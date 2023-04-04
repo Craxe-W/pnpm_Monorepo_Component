@@ -230,3 +230,9 @@ chainWebpack(memo, { env, webpack }) {
     memo.module.rule('js').include.add(path.resolve(process.cwd(), '../component-example/src'));
   },
 ```
+
+#### del 7.0版本在gulp中解析报错  说引入方式又问题 要换乘import或者删除type:module
+
+* 解答
+
+- 网上搜了下 唯一解析就是版本不兼容，官网也看了没看到说不兼容的
