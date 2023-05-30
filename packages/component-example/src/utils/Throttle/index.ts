@@ -10,7 +10,7 @@ interface Options {
 }
 
 const Throttle = <T = any, P = any>(func: (any: any) => void, wait: number, options?: Options) => {
-  let timeout: null | NodeJS.Timeout;
+  let timeout: any;
   let context: any;
   let args: any;
   let previous = 0;

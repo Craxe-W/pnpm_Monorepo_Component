@@ -12,7 +12,7 @@
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"],
-      "demos": ["./src/demos/index.ts"],
+      "demos": ["src/demos/index.ts"],
       "component-example/es/*": ["../component-example/src/*"],
       "component-example": ["../component-example/index.ts"]
     },

@@ -34,7 +34,7 @@ export const getUrlQuery = (name: string, url?: string) => {
  */
 
 export const getUrlVars = (urlStr: string) => {
-  const vars = {};
+  const vars: any = {};
   const reg = /[&?]+([^&=]+)=([^&]*)/gi;
   urlStr.replace(reg, (m, key, value) => {
     return (vars[key] = decodeURIComponent(value));

@@ -1,10 +1,7 @@
 /**
  * 将我自定义的Props属性与父组件传递进来的Props进行整合
  */
-import assign from 'lodash/assign';
-import assignWith from 'lodash/assignWith';
-import isUndefined from 'lodash/isUndefined';
-
+import {assign, assignWith, isUndefined} from 'lodash';
 export function mergeProps<A, B>(a: A, b: B): B & A;
 export function mergeProps<A, B, C>(a: A, b: B, c: C): C & B & A;
 export function mergeProps(...items: any[]) {

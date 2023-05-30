@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "outDir": "./lib",
-    "rootDirs": ["src", "config"],
+    "rootDirs": [
+      "src",
+      "config"
+    ],
     "target": "ES6",
     "moduleResolution": "node",
     "jsx": "react",
@@ -12,16 +15,29 @@
     "downlevelIteration": true,
     "sourceMap": true,
     "baseUrl": "./",
-    "lib": ["ES2016", "DOM"],
-    "paths": {},
+    "typeRoots": [
+      "./src/typings"
+    ],
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "strict": true,
     "noImplicitAny": true,
     "resolveJsonModule": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "lib", "es", "dist", ".dumi"],
+  "include": [
+    "src",
+    "index.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "dist"
+  ],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS",

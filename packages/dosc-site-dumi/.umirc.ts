@@ -7,7 +7,6 @@ const components = [
   '/components/count-down',
   '/components/skeleton',
   '/components/css3',
-  '/components/activity-rule',
 ];
 
 const logo =

@@ -11,7 +11,8 @@
 export function importJs(
   src: string,
   id: string,
-  options?: Partial<Omit<HTMLScriptElement, 'id' | 'src' | 'type'>>,
+  // options?: Partial<Omit<HTMLScriptElement, 'id' | 'src' | 'type'>>,
+  options?: any,
   retry = 3,
 ): any {
   return new Promise(function (resolve, reject) {
@@ -72,7 +73,8 @@ export function importJs(
  * @param options link attribute
  * @param retry 加载失败重试，默认3次，0关闭
  */
-export function importCss(href: string, id: string, options?: Omit<HTMLLinkElement, 'href'>, retry = 3): any {
+// export function importCss(href: string, id: string, options?: Omit<HTMLLinkElement, 'href'>, retry = 3): any {
+export function importCss(href: string, id: string, options?: any, retry = 3): any {
   return new Promise(function (resolve, reject) {
     let useOnload = true;
     const link: HTMLLinkElement = document.createElement('link');
@@ -86,7 +88,7 @@ export function importCss(href: string, id: string, options?: Omit<HTMLLinkEleme
       }
     }
 
-    const engine =
+    const engine: any =
       window.navigator.userAgent.match(
         /Trident\/([^ ;]*)|AppleWebKit\/([^ ;]*)|Opera\/([^ ;]*)|rv:([^ ;]*)(.*?)Gecko\/([^ ;]*)|MSIE\s([^ ;]*)|AndroidWebKit\/([^ ;]*)/,
       ) || 0;

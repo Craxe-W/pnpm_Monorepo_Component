@@ -37,22 +37,8 @@ function copyAssets() {
     .pipe(gulp.dest('lib/cjs/assets'))
 }
 
-function buildCJS() {
-  return gulp
-    .src(['lib/es/**/*.js'])
-    .pipe(
-      babel({
-        plugins: ['@babel/plugin-transform-modules-commonjs']
-      })
-    )
-    .pipe(gulp.dest('lib/cjs/'))
-}
-
 function buildES() {
-  const tsProject = ts({
-    ...tsconfig.compilerOptions,
-    module: 'ESNext'
-  })
+  const tsProject = ts({ ...tsconfig.compilerOptions, module: 'ES6' })
   return gulp
     .src(['src/**/*.{ts,tsx}'])
     .pipe(tsProject)
@@ -62,6 +48,17 @@ function buildES() {
       })
     )
     .pipe(gulp.dest('lib/es/'))
+}
+
+function buildCJS() {
+  return gulp
+    .src(['lib/es/**/*.js'])
+    .pipe(
+      babel({
+        plugins: ['@babel/plugin-transform-modules-commonjs']
+      })
+    )
+    .pipe(gulp.dest('lib/cjs/'))
 }
 
 function buildDeclaration() {
