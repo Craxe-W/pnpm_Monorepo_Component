@@ -28,7 +28,7 @@ const LocaleSelect: FC<{ location: any }> = ({ location }) => {
         }
       }
     }
-    pathList.includes(currPath) ? history.replace(currPath) : history.replace('/components/carousel');
+    pathList.includes(currPath) ? history.replace(currPath) : history.replace('/components/animation_click');
   }, []);
 
   return null;

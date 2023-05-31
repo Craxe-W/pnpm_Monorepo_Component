@@ -16,6 +16,11 @@ export default () => {
           </div>
         </div>
       </DemoBlock>
+      <DemoBlock title='图片渐进效果'>
+        <div className='gradually'>
+          <img src='https://image.yonghuivip.com/yh-flipcard-game/imgs/bg_cardDialog_bg.png' alt='' />
+        </div>
+      </DemoBlock>
     </React.Fragment>
   );
 };

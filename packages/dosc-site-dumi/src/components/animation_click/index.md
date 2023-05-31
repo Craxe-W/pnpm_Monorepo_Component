@@ -1,4 +1,4 @@
-# CSS3 动画实现手势点击效果
+# CSS3 常见动画效果
 
 <code src="./demo.tsx"></code>
 
@@ -42,4 +42,36 @@
   }
 }
 
+```
+
+- 动画渐进效果 也是采用的是 animation
+- 这里 重点是通过 tranform: scale3d(0.1,0.1,0.1) 来实现 当然 渐进的显示与隐藏还是需要 opacity
+
+```
+.gradually {
+  position: relative;
+  width: 180px;
+  height: 280px;
+  animation-name: graduallyanimation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes graduallyanimation {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 ```
