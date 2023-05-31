@@ -10,7 +10,7 @@ export default () => {
 
   return (
     <>
-      <DemoBlock title='现金券' padding='12px'>
+      <DemoBlock title='现金券' padding='12px' background='#C8C8C8'>
         <Space block direction='vertical' style={{ '--gap': '9px' }}>
           <Grid columns={1} gap={9}>
             <Grid.Item>
@@ -26,19 +26,13 @@ export default () => {
 
           <Grid columns={1} gap={9}>
             <Grid.Item>
-              <Coupon couponKindShowVo={caseCoupon.couponkindshowvo} couponStyle='text02' />
-            </Grid.Item>
-          </Grid>
-
-          <Grid columns={2} gap={9}>
-            <Grid.Item>
-              <Coupon couponKindShowVo={caseCoupon.couponkindshowvo} couponStyle='text02' couponLayout='double' />
+              <Coupon couponKindShowVo={caseCoupon.couponkindshowvo} couponStyle='style02' />
             </Grid.Item>
           </Grid>
         </Space>
       </DemoBlock>
 
-      <DemoBlock title='满减券' padding='12px'>
+      <DemoBlock title='满减券' padding='12px' background='#C8C8C8'>
         <Space block direction='vertical' style={{ '--gap': '9px' }}>
           <Grid columns={1} gap={9}>
             <Grid.Item>
@@ -54,23 +48,13 @@ export default () => {
 
           <Grid columns={1} gap={9}>
             <Grid.Item>
-              <Coupon couponKindShowVo={fullReductionCoupon.couponkindshowvo} couponStyle='text02' />
-            </Grid.Item>
-          </Grid>
-
-          <Grid columns={2} gap={9}>
-            <Grid.Item>
-              <Coupon
-                couponKindShowVo={fullReductionCoupon.couponkindshowvo}
-                couponStyle='text02'
-                couponLayout='double'
-              />
+              <Coupon couponKindShowVo={fullReductionCoupon.couponkindshowvo} couponStyle='style02' />
             </Grid.Item>
           </Grid>
         </Space>
       </DemoBlock>
 
-      <DemoBlock title='赠品券' padding='12px'>
+      <DemoBlock title='赠品券' padding='12px' background='#C8C8C8'>
         <Space block direction='vertical' style={{ '--gap': '9px' }}>
           <Grid columns={1} gap={9}>
             <Grid.Item>
@@ -86,19 +70,13 @@ export default () => {
 
           <Grid columns={1} gap={9}>
             <Grid.Item>
-              <Coupon couponKindShowVo={giftCoupon.couponkindshowvo} couponStyle='text02' />
-            </Grid.Item>
-          </Grid>
-
-          <Grid columns={2} gap={9}>
-            <Grid.Item>
-              <Coupon couponKindShowVo={giftCoupon.couponkindshowvo} couponStyle='text02' couponLayout='double' />
+              <Coupon couponKindShowVo={giftCoupon.couponkindshowvo} couponStyle='style02' />
             </Grid.Item>
           </Grid>
         </Space>
       </DemoBlock>
 
-      <DemoBlock title='折扣券' padding='12px'>
+      <DemoBlock title='折扣券' padding='12px' background='#C8C8C8'>
         <Space block direction='vertical' style={{ '--gap': '9px' }}>
           <Grid columns={1} gap={9}>
             <Grid.Item>
@@ -114,19 +92,13 @@ export default () => {
 
           <Grid columns={1} gap={9}>
             <Grid.Item>
-              <Coupon couponKindShowVo={discountCoupon.couponkindshowvo} couponStyle='text02' />
-            </Grid.Item>
-          </Grid>
-
-          <Grid columns={2} gap={9}>
-            <Grid.Item>
-              <Coupon couponKindShowVo={discountCoupon.couponkindshowvo} couponStyle='text02' couponLayout='double' />
+              <Coupon couponKindShowVo={discountCoupon.couponkindshowvo} couponStyle='style02' />
             </Grid.Item>
           </Grid>
         </Space>
       </DemoBlock>
 
-      <DemoBlock title='商品兑换券' padding='12px'>
+      <DemoBlock title='商品兑换券' padding='12px' background='#C8C8C8'>
         <Space block direction='vertical' style={{ '--gap': '9px' }}>
           <Grid columns={1} gap={9}>
             <Grid.Item>
@@ -142,19 +114,13 @@ export default () => {
 
           <Grid columns={1} gap={9}>
             <Grid.Item>
-              <Coupon couponKindShowVo={exchangeCoupon.couponkindshowvo} couponStyle='text02' />
-            </Grid.Item>
-          </Grid>
-
-          <Grid columns={2} gap={9}>
-            <Grid.Item>
-              <Coupon couponKindShowVo={exchangeCoupon.couponkindshowvo} couponStyle='text02' couponLayout='double' />
+              <Coupon couponKindShowVo={exchangeCoupon.couponkindshowvo} couponStyle='style02' />
             </Grid.Item>
           </Grid>
         </Space>
       </DemoBlock>
 
-      <DemoBlock title='印花券' padding='12px'>
+      <DemoBlock title='印花券' padding='12px' background='#C8C8C8'>
         <Space block direction='vertical' style={{ '--gap': '9px' }}>
           <Grid columns={1} gap={9}>
             <Grid.Item>
@@ -170,13 +136,7 @@ export default () => {
 
           <Grid columns={1} gap={9}>
             <Grid.Item>
-              <Coupon couponKindShowVo={stampCoupon.couponkindshowvo} couponStyle='text02' />
-            </Grid.Item>
-          </Grid>
-
-          <Grid columns={2} gap={9}>
-            <Grid.Item>
-              <Coupon couponKindShowVo={stampCoupon.couponkindshowvo} couponStyle='text02' couponLayout='double' />
+              <Coupon couponKindShowVo={stampCoupon.couponkindshowvo} couponStyle='style02' />
             </Grid.Item>
           </Grid>
         </Space>
