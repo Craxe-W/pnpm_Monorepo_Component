@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DemoBlock } from 'demos';
+import { DemoBlock } from '../../demos';
 import { Space, Grid } from 'antd-mobile';
 import { Coupon } from 'component-example';
 import { CouponKindShowVo } from 'component-example/es/components/coupon';

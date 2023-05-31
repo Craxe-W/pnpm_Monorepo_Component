@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DemoBlock } from 'demos';
+import { DemoBlock } from '../../demos';
 import { Carousel } from 'component-example';
 import './index.less';
 const colors = ['#ace0ff', '#bcffbd', '#e4fabd', '#ffcfac', '#00FA9A', '#FFFF00', '#FF4500'];

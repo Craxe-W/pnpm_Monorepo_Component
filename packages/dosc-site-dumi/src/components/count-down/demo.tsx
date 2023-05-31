@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-import { DemoBlock } from 'demos';
+import { DemoBlock } from '../../demos';
 import { Space, Button, Toast } from 'antd-mobile';
 import { PlayOutline, StopOutline, UndoOutline } from 'antd-mobile-icons';
 import { CountDown } from 'component-example';

@@ -24,7 +24,7 @@ const Navbar: FC<INavbarProps> = ({ location, darkPrefix }) => {
       <button className='__dumi-default-navbar-toggle' />
       <div className='left-part'>
         <Link className='__dumi-default-navbar-logo' to='/components/carousel'>
-          <img src={logo.toString()} alt='logo' />
+          <img src={logo?.toString()} alt='logo' />
           <div className='title'>{title}</div>
           <div className='version'>{version}</div>
         </Link>

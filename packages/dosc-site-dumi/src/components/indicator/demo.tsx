@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DemoBlock } from 'demos';
+import { DemoBlock } from '../../demos';
 import { Indicator } from 'component-example';
 
 export default () => (

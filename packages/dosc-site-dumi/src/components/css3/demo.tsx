@@ -1,5 +1,5 @@
 import React from 'react';
-import { DemoBlock } from 'demos';
+import { DemoBlock } from '../../demos';
 
 import './index.less';
 
