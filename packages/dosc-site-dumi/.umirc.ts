@@ -6,7 +6,8 @@ const components = [
   '/components/carousel',
   '/components/count-down',
   '/components/skeleton',
-  '/components/css3',
+  '/components/coupon_css3',
+  '/components/animation_click',
 ];
 
 const logo =

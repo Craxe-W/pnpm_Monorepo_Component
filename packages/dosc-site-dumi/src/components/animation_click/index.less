@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 125px;
+  height: 192px;
+  line-height: 100px;
+  text-align: center;
+  background: url('https://image.yonghuivip.com/yh-flipcard-game/imgs/bg_card_front.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.animationClick {
+  position: absolute;
+  top: 90px;
+  left: 45px;
+  animation-name: shadowFinger;
+  animation-duration: 5s;
+  animation-timing-function: steps(1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+/* stylelint-disable-next-line keyframes-name-pattern */
+@keyframes shadowFinger {
+  0% {
+    left: 40px;
+  }
+
+  10%,
+  20%,
+  45%,
+  55%,
+  80%,
+  90% {
+    transform: translate(-3px, -10px);
+    animation-timing-function: ease-in;
+  }
+
+  15%,
+  25%,
+  50%,
+  60%,
+  85%,
+  95% {
+    transform: translate(0, 0);
+    animation-timing-function: ease-in;
+  }
+
+  35% {
+    left: 155px;
+  }
+
+  75%,
+  100% {
+    left: 255px;
+  }
+}
